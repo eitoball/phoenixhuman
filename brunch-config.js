@@ -64,6 +64,10 @@ exports.config = {
   },
 
   npm: {
-    enabled: true
+    enabled: true,
+    styles: {
+      bootstrap: ['dist/css/bootstrap.min.css']
+    },
+    static: ['dist/js/bootstrap.min.js']
   }
 };
