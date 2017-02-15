@@ -14,7 +14,7 @@
 
   <li>
     <strong>Picture:</strong>
-    <%= @idea.picture %>
+    <img src="<%= Phoenixhuman.Picture.url({@idea.picture, @idea}) %>" />
   </li>
 
 </ul>

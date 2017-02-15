@@ -15,7 +15,7 @@
     <tr>
       <td><%= idea.name %></td>
       <td><%= idea.description %></td>
-      <td><%= idea.picture %></td>
+      <td><%= inspect(idea.picture) %></td>
 
       <td class="text-right">
         <%= link "Show", to: idea_path(@conn, :show, idea), class: "btn btn-default btn-xs" %>
