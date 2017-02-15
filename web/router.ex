@@ -17,7 +17,8 @@ defmodule Phoenixhuman.Router do
     pipe_through :browser # Use the default browser stack
 
     resources "/ideas", IdeaController
-    get "/", PageController, :index
+    get "/", IdeaController, :index
+    get "/pages/info", PageController, :info
   end
 
   # Other scopes may use custom stacks.
